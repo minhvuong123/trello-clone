@@ -48,3 +48,8 @@ npx shadcn-ui@latest
   √ Which style would you like to use? » Default
   √ Which color would you like to use as base color? » Neutral
   √ Would you like to use CSS variables for colors? ... yes
+
+clerk.com : authentication
+  √ create application : clerk_create_application.png
+  √ generate key : clerk_generate_key.png
+  √ follow and install clerk.com
