@@ -57,3 +57,11 @@ clerk.com : authentication
     login with organization
 
 zustand : state management
+
+planetscale: database mysql
+  √ https://planetscale.com/
+
+prisma : connect to database
+  √ npx prisma generate => update model  schema
+  √ npx prisma db push
+  √ npm i @prisma/client
