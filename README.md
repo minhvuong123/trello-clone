@@ -53,3 +53,5 @@ clerk.com : authentication
   √ create application : clerk_create_application.png
   √ generate key : clerk_generate_key.png
   √ follow and install clerk.com
+    login with personality
+    login with organization
