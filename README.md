@@ -55,3 +55,5 @@ clerk.com : authentication
   √ follow and install clerk.com
     login with personality
     login with organization
+
+zustand : state management
