@@ -64,4 +64,8 @@ planetscale: database mysql
 prisma : connect to database
   √ npx prisma generate => update model  schema
   √ npx prisma db push
+  √ npx prisma studio => review data in localhost
   √ npm i @prisma/client
+
+zod : validation schema
+  √ npm i zod

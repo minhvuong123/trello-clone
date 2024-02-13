@@ -1,9 +1,20 @@
-const OrganizationIdPage = () => {
+import { prismadb } from "@/lib/db";
+import { Board } from "./board";
+import { Form } from "./form";
+
+const OrganizationIdPage = async () => {
+  const boards = await prismadb.board.findMany();
 
   return (
-    <div>
-      {/* <OrganizationSwitcher hidePersonal /> */}
-      Organization Id
+    <div className="flex flex-col space-y-4">
+      <Form />
+      <div className="space-y-2">
+        {
+          boards.map((board) => (
+            <Board key={board.id} id={board.id} title={board.title} />
+          ))
+        }
+      </div>
     </div>
   )
 }
