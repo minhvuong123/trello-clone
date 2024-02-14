@@ -7,7 +7,6 @@ import { useEffect } from "react";
 
 export const OrgControl = () => {
   const params = useParams();
-  console.log("apodsiaopdiaidspads:", params)
   const { setActive } = useOrganizationList();
 
   useEffect(() => {
