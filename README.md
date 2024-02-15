@@ -72,3 +72,6 @@ zod : validation schema
 
 sonner : toast message
   √ npm i sonner
+
+unsplash.com : https://github.com/unsplash/unsplash-js => get images
+  √ npm i unsplash-js
