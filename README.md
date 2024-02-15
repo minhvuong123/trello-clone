@@ -69,3 +69,6 @@ prisma : connect to database
 
 zod : validation schema
   √ npm i zod
+
+sonner : toast message
+  √ npm i sonner
