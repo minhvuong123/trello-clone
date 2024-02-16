@@ -25,18 +25,17 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        throw new Error("Unsplash Error!");
-        const result = await unsplash.photos.getRandom({
-          collectionIds: ["317099"],
-          count: 9,
-        });
+        // const result = await unsplash.photos.getRandom({
+        //   collectionIds: ["317099"],
+        //   count: 9,
+        // });
 
-        if (result && result.response) {
-          const newImages = result.response as Array<Record<string, any>>;
-          setImages(newImages);
-        } else {
-          console.error("Failed to get images from Unsplash!");
-        }
+        // if (result && result.response) {
+        //   const newImages = result.response as Array<Record<string, any>>;
+        //   setImages(newImages);
+        // } else {
+        //   console.error("Failed to get images from Unsplash!");
+        // }
       } catch (error) {
         console.log(error);
         setImages(defaultImages);
@@ -80,6 +79,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
               className="hidden"
               checked={selectImageId === image.id}
               disabled={pending}
+              readOnly
               value={`${image.id}|${image.urls.thumb}|${image.urls.full}|${image.links.html}|${image.user.name}`}
             />
             <Image
