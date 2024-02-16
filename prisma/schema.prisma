@@ -11,12 +11,12 @@ datasource db {
 }
 
 model Board {
-  id          String  @id @default(auto()) @map("_id") @db.ObjectId
-  title       String
-  orgId       String
-  imageId     String
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  orgId         String
+  imageId       String
   imageThumbUrl String
-  imageFullUrl String
+  imageFullUrl  String
   imageUserName String
   imageLinkHTML String
 
