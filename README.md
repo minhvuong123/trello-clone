@@ -80,3 +80,6 @@ unsplash.com : https://github.com/unsplash/unsplash-js => get images
 @hello-pangea/dnd : drap and drop
 
 @tanstack/react-query : integrate api
+
+
+stripe.com : subscription fee
